@@ -1,0 +1,133 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: hsl(210, 36%, 96%);
+}
+main{
+  text-align: center;
+  width: 500px;
+  margin: 150px auto 0;
+  padding: 20px;
+  background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: #0000003b 0px 0px 20px;
+}
+.count{
+  position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+    background-color: #05c5f5;
+    color: white;
+    width: 23px;
+    font-size: 21px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 5px;
+}
+.count::after{
+  content: "";
+  position: absolute;
+  right: -10%;
+  top: -10%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-color: #0a76aa;
+  border-width: 5px;
+  border-style: solid
+}
+input[type="text"]{
+  width: 80%;
+  background-color: #ebebeb;
+  border: none;
+  padding: 10px 0;
+  border-radius: 10px 0 0 10px;
+  padding-left: 20px;
+}
+
+input[type="submit"] {
+  width: 15%;
+  background-color: #b2efff;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 0px 10px 10px 0;
+  margin-left: -5px;
+  transition: .5s;
+}
+@media (max-width:800px) {
+  main{
+    width: unset;
+    margin-right: 20px;
+    margin-left: 20px;
+
+  }
+  input[type="text"] {
+    width: 70%;
+  }
+}
+input[type="submit"]:hover{
+  background-color: #05c5f5;
+  color: white;
+  cursor: pointer;
+}
+.list{
+  margin: 20px;
+  text-align: left;
+}
+.list div{
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bdbdeb;
+}
+p{
+  margin: 0;
+}
+button{
+  border: none;
+  background-color: unset;
+  color: #fa5d5d;
+  letter-spacing: 10px;
+  cursor: pointer;
+}
+span{
+  background-color: #fa5d5d;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+span:hover{
+  color: white;
+  background-color: #fa3030;
+  cursor: pointer;;
+}
+.done{
+  background-color: #d8a5fa !important;
+}
+.done span{
+  /* background-color: green; */
+  background-color: #a446fc;
+  color: white;
+}
+
+.alert{
+  width: 80%;
+    margin: auto;
+    height: 20px;
+}
+.remove{
+  background-color: #fa5d5d54;
+  color: #e15c5c;
+}
+.add{
+  background-color:#a0f3a07a;
+  color: #03b803;
+}
+.show{
+  display: block;
+}
